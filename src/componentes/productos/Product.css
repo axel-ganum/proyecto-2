@@ -1,0 +1,34 @@
+
+.productos{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.card{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.imgs{
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px){
+  .productos {
+    flex-direction: column;
+  }
+  .cart {
+    width: 100%;
+  }
+  .imgs {
+    width: 100%;
+  }
+}

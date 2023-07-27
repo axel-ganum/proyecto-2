@@ -1,0 +1,14 @@
+.cartContent {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.cartContent > img {
+    height: 120px;
+    width: 100px;
+    text-align: center;
+}
+.cartTotal {
+    text-align: center;
+}

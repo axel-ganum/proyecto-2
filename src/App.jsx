@@ -1,31 +1,25 @@
-import React from 'react';
-import {BrowserRouter,Routes, Route, Link} from 'react-router-dom';
-import ProductList from "./componentes/productList";
-import Carrito from './componentes/carrito';
+import Home from './componentes/Home';
+import CartContent from './componentes/CartContent/CartContent';
+import DataProvider from './componentes/DataContext';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
- 
+
 
   return (
+    <DataProvider>
     <BrowserRouter>
-   <nav>
-    <Link to="/">Lista de Productos</Link>
-    <Link to="/about">Carrito</Link>
-    </nav>
-    
-    <div>
-      <Routes>
-      <Route path='/' element={<ProductList/>}/>
-      <Route path='/carrito' element={<Carrito/>}/>
-    </Routes>
+       <Routes>
+         
+          <Route path='/' element={<Home/>} />
 
-    </div>
+          <Route path='/cart' element={<CartContent />} />
+        </Routes>
+      
     </BrowserRouter>
-    
-    
-
-  )
+    </DataProvider>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,64 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: url(https://thumbs.dreamstime.com/z/fondo-blanco-con-obturador-de-lente-c%C3%A1mara-dise%C3%B1o-abstracto-elegante-gris-tecnolog%C3%ADa-abstracta-ilustraci%C3%B3n-vectorial-241769547.jpg);
+
+}
+.banner-container {
+    text-align: center;
+    padding: 15% 0;
+}
+.product-card {
+    width: 48%; 
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+  }
+  
+  .product-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .product-description {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .product-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-button:hover {
+    background-color: #0056b3;
+  }
+
+  
+  
+  
+  
