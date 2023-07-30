@@ -8,7 +8,7 @@ const CartTotal = () => {
      
   return (
     <div className="cartTotal" >
-        <h3>el total a pagar: {total}$</h3>
+        <h3 className="total">The total to pay: $ {total} </h3>
         </div>
   )
 }

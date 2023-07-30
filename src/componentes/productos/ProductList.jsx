@@ -1,7 +1,6 @@
 import React, {useContext, useEffect, useState } from 'react';
 import { dataContext } from '../DataContext';
 import "./product.css";
-import banner from '../Banner/Banner';
 
 
 
@@ -35,27 +34,24 @@ import banner from '../Banner/Banner';
   if (list.error) return <div><h2>{list.error}</h2></div>;
 
   
-  return  data.map((product)=> {
-
-    return (
+  
+  return (
     
-      <header  className='header'>
-    <div className='productos'>
-      <div className='card' key={product.id} >
+    <div className="productos">
+    {data.map((product)=> (
+      
+      <div className="card" key={product.id} >
           <h3>{product.title}</h3>
           <img className='imgs' src={product.image} alt={product.title} />
           <p>{product.description}</p>
-          <p>{product.price}</p>
+          <p>$ {product.price}</p>
           <button onClick={() => buyProduct(product)}>Buy</button>
         
       </div>
-      </div>
-    </header>
-  
-    )
-  })
-  
-};
+      
+  ))}
+  </div>
+    )}
 export default Products;
 
 

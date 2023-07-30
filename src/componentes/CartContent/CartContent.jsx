@@ -1,19 +1,24 @@
 import { useContext } from "react";
-import { dataContext } from "../DataContext";
+import { dataContext } from "../DataContext"
 
 
 import CartElements from "./CartElements";
 import CartTotal from "./CartTotal";
+import { Link } from "react-router-dom";
+
 
 const CartContent = () => {
   const { cart} = useContext(dataContext);
   return cart.length > 0 ?(
   <> 
+  <Link to ="/" className="home-Link">Home</Link>
   <CartElements/>
   <CartTotal/>
   </>
-  ): (
-    <h2 className="cart-message-center">no hay producto</h2>
+  ): ( <>
+    <Link to ="/" className="home-Link">Home</Link>
+    <h2 className="cart-message-center">The carrier is empty </h2>
+   </>
   );
 }
 
